@@ -59,7 +59,7 @@ sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200});
 
 
 (function() {
-    emailjs.init("YOUR_USER_ID"); // Replace with your EmailJS User ID
+    emailjs.init("4BN5IUgt-35xfjYoX"); // Replace with your EmailJS publi api key
 })();
 
 // Form Submission Logic for EmailJS
@@ -67,7 +67,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     event.preventDefault(); // Prevent the default form submission
 
     // Send the form data using EmailJS
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+    emailjs.sendForm('service_rzl77ea', 'template_ftmvq7u', this)
     .then(function(response) {
         alert('Message Sent Successfully!'); // Show success message
     }, function(error) {
