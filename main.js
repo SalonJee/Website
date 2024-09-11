@@ -56,3 +56,21 @@ sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
 
+
+
+(function() {
+    emailjs.init("YOUR_USER_ID"); // Replace with your EmailJS User ID
+})();
+
+// Form Submission Logic for EmailJS
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Send the form data using EmailJS
+    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+    .then(function(response) {
+        alert('Message Sent Successfully!'); // Show success message
+    }, function(error) {
+        alert('Failed to send message: ' + error.text); // Show error message
+    });
+});
