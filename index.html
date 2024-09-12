@@ -10,6 +10,19 @@
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
         <title>Portfolio website complete</title>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "4BN5IUgt-35xfjYoX",
+      });
+   })();
+</script>
+
+        
     </head>
     <body>
         <!--===== HEADER =====-->
@@ -170,7 +183,7 @@
                         <input type="text" id="name" placeholder="Name" class="contact__input">
                         <input type="email" id="email" placeholder="Email" class="contact__input">
                         <textarea id="message" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="submit" value="send" class="contact__button button">
+                        <input type="submit" onclick= "sendmail()"value="send" class="contact__button button">
                     </form>
                 </div>
             </section>
