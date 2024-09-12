@@ -60,7 +60,7 @@ sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200});
 function sendmail(){
     let parms= {
         name : document.getElementById("name").value, 
-        email : document.getElementById("email"),value,
+        email : document.getElementById("email").value,
       message: document.getElementById("message").value, 
 
     }
