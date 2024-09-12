@@ -58,7 +58,7 @@ sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200});
 
 
 
-(function() {
+(function sendmail() {
     emailjs.init("4BN5IUgt-35xfjYoX"); // Replace with your EmailJS publi api key
 })();
 
